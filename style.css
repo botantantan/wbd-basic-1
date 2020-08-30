@@ -1,0 +1,52 @@
+body, html {
+    height : 100%;
+    margin : 0;
+    font-family : Nunito, Helvetica, sans-serif;
+    color : #777;
+}
+
+/* uni */
+.header-image, .background-image {
+    opacity : 0.65;
+
+    background-attachment : fixed;
+    background-position : center;
+    background-repeat : no-repeat;
+    background-size : cover;
+    position : relative;
+}
+
+.header-text, .background-text {
+    text-align : center;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    color : white;
+}
+
+/* header */
+.header-image {
+    background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/header-image.jpg");
+    min-height : 100%;
+}
+
+/* background */
+.background-image {
+    background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("asset/background-image.jpg");
+    min-height : 100%;
+}
+
+/* scroll-progress */
+.progress-container {
+    width : 100%;
+    height : 8px;
+    background : rgb(255, 255, 255);
+    position : fixed;
+}
+
+.progress-bar {
+    height : 8px;
+    background : rgb(0, 0, 0);
+    width : 0%;
+}

@@ -1,2 +1,5 @@
-# wbd-basic-1
-tugas website IF3310 13518065 Fritz Gerald Tjie
+# IF3310 Pengembangan Aplikasi Berbasis Web
+Website Sederhana HTML CSS JS
+Fritz Gerald Tjie
+13518065
+Teknik Informatika

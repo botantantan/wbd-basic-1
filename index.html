@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>Halo</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "icon" type = "image/gif" sizes = "32x32" href = "asset/favicon.gif">
+    </head>
+
+    <body onload = "fadeIn()">
+        <div class = "progress-container">
+            <div class = "progress-bar" id = "progressBar"></div>
+        </div>
+
+        <div class = "header-image">
+            <div class = "header-text">
+                <h1 style = "font-size : 50px">Fritz Gerald Tjie</h1>
+            </div>
+        </div>
+
+        <div class = "background-image">
+            <div class = "background-text">
+                <h1 style = "font-size : 50px">Teknik Informatika</h1>
+                <h1 style = "font-size : 50px">Institut Teknologi Bandung</h1>
+                <h1 style = "font-size : 50px">2018</h1>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        window.onscroll = function() {scrollProgress()};
+
+        function scrollProgress() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
+    </script>
+</html>
